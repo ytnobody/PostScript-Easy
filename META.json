@@ -47,6 +47,12 @@
             "Test::Spellunker" : "v0.2.7"
          }
       },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "Exporter" : "0"
+         }
+      },
       "test" : {
          "requires" : {
             "Test::More" : "0",
