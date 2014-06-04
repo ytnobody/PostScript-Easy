@@ -79,7 +79,7 @@ ok( $lines =~ m/%%Orientation: Portrait/s );
 ok( $lines =~ m/%%Pages: 3/s );
 
 ok( index($lines, "%!PS-Adobe-3.0\n") == 0 );
-my ( $prolog ) = ( $lines =~ m/%%BeginResource: PostScript::Simple\n(.*)%%EndResource/s );
+my ( $prolog ) = ( $lines =~ m/%%BeginResource: PostScript::Easy\n(.*)%%EndResource/s );
 ok( $prolog );
 ok( $prolog eq PROLOG());
 
